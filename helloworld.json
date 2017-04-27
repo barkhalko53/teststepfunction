@@ -8,6 +8,13 @@
 		  "ResultPath": "$.list",
 		  "End": true,
 		  "Comment": "Lambda function returning a list variable."
+		},
+		"HelloWorld1": {
+		  "Type": "Task",
+		  "Resource": "arn:aws:lambda:us-east-1:<accountId>:function:readDynamoDBTable",
+		  "ResultPath": "$.list",
+		  "End": true,
+		  "Comment": "Lambda function returning a list variable."
 		}
 	}
 }
